@@ -29,6 +29,33 @@
             "es5BrowserSupport": true
           },
           "configurations": {
+            "en": {
+
+              "aot": true,
+        
+              "i18nFile": "src/translate/messages.en.xlf",
+        
+              "i18nFormat": "xlf",
+        
+              "i18nLocale": "en",
+        
+              "i18nMissingTranslation": "error"
+          
+        },
+        "fr": {
+
+          "aot": true,
+    
+          "i18nFile": "src/translate/messages.fr.xlf",
+    
+          "i18nFormat": "xlf",
+    
+          "i18nLocale": "fr",
+    
+          "i18nMissingTranslation": "error"
+    
+    },
+
             "production": {
               "fileReplacements": [
                 {
@@ -61,11 +88,24 @@
             "browserTarget": "ImportExcel:build"
           },
           "configurations": {
+
+            "en": {
+
+              "browserTarget": "ImportExcel:build:en"
+        
+            },
+            "fr": {
+
+              "browserTarget": "ImportExcel:build:fr"
+        
+            },
+
             "production": {
               "browserTarget": "ImportExcel:build:production"
             }
           }
         },
+
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {

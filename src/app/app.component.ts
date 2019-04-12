@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, LOCALE_ID, Inject } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ImportExcel';
+  title = 'I18nDemo';
+
+  languageList = [
+
+    { code: 'en', label: 'English' },
+
+    { code: 'fr', label: 'French' },
+
+  ];
+
+  constructor(@Inject(LOCALE_ID) protected localeId: string) { }
 }

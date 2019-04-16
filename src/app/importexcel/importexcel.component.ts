@@ -17,11 +17,13 @@ export class ImportexcelComponent implements OnInit {
   }
   DisplayData = [
     "firstName",
+    "Début calculé Activité",
     "lastName",
     "emailId"
 ];
 DisplayData1 = [
   "firstName",
+  "Début calculé Activité",
     "lastName",
     "emailId"
 ];

@@ -3,16 +3,33 @@
 
 <table id="tblCustomers" cellpadding="0" cellspacing="0" ng-show="IsVisible">
     <tr>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Email Id</th>
+        <th>Nom Ressource</th>
+        <th>Descriptif Fichier</th>
+        <th>LIGNE PDI</th>
+        <th>Type Indus</th>
+        <th>N° Lettre</th>
+        <th>Type de Créneau</th>
+        <th>Nom Activité</th>
+        <th>BLOC_NOTES</th>
+        <th>Dimension</th>
+        <th>Nbre d'Env</th>
+        <th>Usine PF</th>
+        <th>Debut</th>
     </tr>
     <tbody>
         <tr *ngFor="let m of DisplayData1 | slice:pageStart:100+pageStart">
-          <td>{{m.Fichier}}</td>
-            <td>{{m.firstName}}</td>
-            <td>{{m.lastName}}</td>
-            <td>{{m.emailId}}</td>
+            <td>{{m.NomRessource}}</td>
+            <td>{{m.DescriptifFichier}}</td>
+            <td>{{m.LIGNEPDI}}</td>
+            <td>{{m.TypeIndus}}</td>
+            <td>{{m.NLettre}}</td>
+            <td>{{m.Typede}}</td>
+            <td>{{m.Nom}}</td>
+            <td>{{m.BLOC_NOTES}}</td>
+            <td>{{m.Dimension}}</td>
+            <td>{{m.NbredEnv}}</td>
+            <td>{{m.UsinePF}}</td>
+            <td>{{m.Debut}}</td>
             
         </tr>
         <button *ngIf="pageStart >= 100" (click)="prevData()">Previous</button>
